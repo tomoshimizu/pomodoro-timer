@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Z9R-XO-Jg4">
-                                <rect key="frame" x="125" y="590" width="140" height="170"/>
+                                <rect key="frame" x="125" y="610" width="140" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bz2-XI-IKV">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="20"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqv-EO-uh4">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.8784313725490196" green="0.070588235294117646" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="WID-GF-fzk"/>
                                                     <constraint firstAttribute="width" constant="20" id="f0P-LY-sQB"/>
@@ -33,7 +32,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyb-q8-s9o">
                                                 <rect key="frame" x="40" y="0.0" width="20" height="20"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.8784313725490196" green="0.070588235294117646" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="VPn-pI-rFe"/>
                                                     <constraint firstAttribute="width" constant="20" id="s3c-91-0k4"/>
@@ -41,7 +40,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-bw-quE">
                                                 <rect key="frame" x="80" y="0.0" width="20" height="20"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.8784313725490196" green="0.070588235294117646" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="CTD-mL-hz8"/>
                                                     <constraint firstAttribute="height" constant="20" id="Cec-Ch-065"/>
@@ -49,7 +48,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMC-h6-ymF">
                                                 <rect key="frame" x="120" y="0.0" width="20" height="20"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.8784313725490196" green="0.070588235294117646" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="JLY-X1-Zdb"/>
                                                     <constraint firstAttribute="height" constant="20" id="qED-Vh-rC7"/>
@@ -58,10 +57,10 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggU-6n-DXw">
-                                        <rect key="frame" x="20" y="70" width="100" height="100"/>
+                                        <rect key="frame" x="30" y="70" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="5es-E7-B5q"/>
-                                            <constraint firstAttribute="height" constant="100" id="cf5-zM-Ojb"/>
+                                            <constraint firstAttribute="width" constant="80" id="5es-E7-B5q"/>
+                                            <constraint firstAttribute="height" constant="80" id="cf5-zM-Ojb"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="start"/>
@@ -73,25 +72,26 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.24313725490196078" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Z9R-XO-Jg4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mxU-Vt-SDM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z9R-XO-Jg4" secondAttribute="bottom" constant="50" id="pJQ-FZ-noX"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="setFourView" destination="bMC-h6-ymF" id="gMA-Rb-VhS"/>
+                        <outlet property="setOneView" destination="aqv-EO-uh4" id="vBp-sH-5aX"/>
+                        <outlet property="setThreeView" destination="t0D-bw-quE" id="Jte-wo-INT"/>
+                        <outlet property="setTwoView" destination="Vyb-q8-s9o" id="Cyi-wj-b2n"/>
                         <outlet property="startButton" destination="ggU-6n-DXw" id="RCk-wC-0sk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="-2"/>
+            <point key="canvasLocation" x="112.30769230769231" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>
         <image name="start" width="256" height="256"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
